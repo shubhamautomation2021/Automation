@@ -11,13 +11,7 @@ public class SwitchtoMethod {
 		WebDriver driver=new ChromeDriver();
 		driver.navigate().to("https://www.google.com");
 		driver.switchTo().activeElement().sendKeys("Java",Keys.ENTER);
-		Thread.sleep(2000);
-		Navigation nav = driver.navigate();
-		nav.back();
-		Thread.sleep(2000);
-		nav.forward();
-		Thread.sleep(2000);
-		driver.navigate().refresh();
+		
 		
 	}
 
