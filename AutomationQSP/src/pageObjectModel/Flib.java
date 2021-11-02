@@ -22,8 +22,7 @@ public class Flib {
 		FileInputStream fis = new FileInputStream(propPath);
 		Properties prop = new Properties();
 		prop.load(fis);
-		String value = prop.getProperty(key)
-;
+		String value = prop.getProperty(key);
 		return value;
 		
 	}
