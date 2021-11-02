@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class TestActitimeValidLogin extends BaseTest{
 	
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, InterruptedException {
 		
 		BaseTest bt = new BaseTest();
 		bt.openBrowser();
@@ -14,6 +14,7 @@ public class TestActitimeValidLogin extends BaseTest{
 		String password = flib.readPropertyData(PROP_PATH, "password");
 		
 		lp.validLoginActiTime(username,password);
+		Thread.sleep(3000);
 		
 		bt.closeBrowser();
 		
