@@ -11,6 +11,9 @@ public interface IAutoConst {
 	String CHROME_VALUE="./drivers/chromedriver.exe";
 	String GECKO_VALUE="./drivers/geckodriver.exe";
 	
+	String SCREENSHOT_PATH="./screenshots/";
+	
+	
 	long ITO=30;
 	
 	
