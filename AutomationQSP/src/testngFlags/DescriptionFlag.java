@@ -3,7 +3,7 @@ package testngFlags;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class descriptionFlag {
+public class DescriptionFlag {
   @Test(description = "we are going to test the login feature")
   public void login() 
   {
