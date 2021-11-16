@@ -1,4 +1,4 @@
-package handlingDropdown;
+package handlingTheDropdown;
 
 import java.util.concurrent.TimeUnit;
 
@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class SelectTheOptionByValue {
+public class DeSelectTheOptionByIndex {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");                                                                                            
 		WebDriver driver = new ChromeDriver();
@@ -19,7 +19,9 @@ public class SelectTheOptionByValue {
 		WebElement dropdownElement = driver.findElement(By.id("menu"));
 		
 		Select sel = new Select(dropdownElement);
-		sel.selectByValue("2");
+		sel.selectByIndex(7);
+		
+		sel.deselectByIndex(7);
 	}
-
 }
+

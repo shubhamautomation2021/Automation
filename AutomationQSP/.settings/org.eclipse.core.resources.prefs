@@ -1,6 +1,9 @@
 eclipse.preferences.version=1
 encoding//src/Assignment/FlipkartSmartphone.java=UTF-8
 encoding//src/Problem/Problem1.java=UTF-8
+encoding//src/handlingWindow/Handlingwindow.java=UTF-8
+encoding//src/synchronization/ImplicitelyWaitProg.java=UTF-8
+encoding//src/synchronization/Problem3.java=UTF-8
 encoding//src/xpathLocator/XpathFlikartFilter.java=UTF-8
 encoding//src/xpathLocator/XpathUsingDependentIndependentMethod.java=UTF-8
 encoding//src/xpathLocator/XpathUsingMultipleAttributes.java=UTF-8

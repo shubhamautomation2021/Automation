@@ -1,25 +1,22 @@
-package handlingDropdown;
+package scrollingOperations;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 
-public class SelectTheOptionByIndex {
+public class ScrollDown {
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");                                                                                            
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("file:///C:/Users/SHUBHAM%20ANAND/Desktop/wcsm5NEW/singleSelectDropdown.html");
-		Thread.sleep(8000);
-		WebElement dropdownElement = driver.findElement(By.id("menu"));
+		driver.get("https://www.selenium.dev");
+		Thread.sleep(3000);
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("window.scrollBy(0,500)");//scroll down by 500 pxl
 		
-		Select sel = new Select(dropdownElement);
-		sel.selectByIndex(7);
 	}
-}
 
+}

@@ -9,7 +9,7 @@ public class ClassNameLocator {
 	
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com");
 		driver.manage().window().maximize();
 		driver.switchTo().activeElement().sendKeys("Monica Geller",Keys.ENTER);

@@ -3,7 +3,7 @@ package testngFlags;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class Flag6 {
+public class Flag5 {
 	//priority flag
 	@Test()
 	public void login()

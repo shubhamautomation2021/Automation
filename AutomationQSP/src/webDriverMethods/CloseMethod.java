@@ -8,7 +8,7 @@ public class CloseMethod {
 		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.naukri.com");
-		Thread.sleep(10000);
+		Thread.sleep(3000);
 		driver.close();
 	}
 }
